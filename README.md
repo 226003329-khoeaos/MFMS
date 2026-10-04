@@ -26,4 +26,16 @@ No online compiler is used. You must have GCC installed on your computer.
 ### Github repository link
 https://github.com/226003329-khoeaos/MFMS
 
+Student [226106144] [Hitjevi Ngeama] (STUDENT 3)
+
+**Overview**
+This module provides functionality to manage supplier data within a municipal financial management system. It allows users to add, search, and display supplier information. It ensures that all supplier records are validated before being stored, maintaining accurate contact details for the municipality.
+
+**Features**
+- **Add Suppliers:** Register new suppliers with validation for unique positive IDs and non-empty names.
+- **Display Suppliers:** View all registered suppliers in a formatted list showing their full details.
+- **Search Suppliers:** Find suppliers by either their unique ID or their exact name (using string comparison).
+- **Supplier Reports:** Generate a summary report displaying all registered suppliers and the total count.
+
+
 "Submitted by []"
