@@ -1,30 +1,6 @@
 #include <stdio.h>
 #include <string.h>
-
-#define MAX_EMPLOYEES 100
-
-struct Employee {
-    int id;
-    char firstName[60];
-    char lastName[60];
-    char housePhone[10];
-    char department[60];
-    char houseAddress[70];
-    char emailAddress[60];
-    int age;
-    char dob[15];
-    float basicSalary;
-    float housingAllowance;
-    float transportAllowance;
-    float grossSalary;
-    
-};
-
-void addEmployee(struct Employee emp[], int *count);
-void displayEmployee(struct Employee emp[], int count);
-void searchEmployee(struct Employee emp[], int count);
-void calculateSalary(struct Employee *emp);
-void printEmployeeDetails(struct Employee emp);
+#include "EmployeeManagement"
 
 int main(){
     struct Employee employees [MAX_EMPLOYEES];
@@ -78,35 +54,35 @@ void addEmployee(struct Employee emp[], int *count) {
 
     printf("Enter First Name: ");
     fgets(emp[*count].firstName, sizeof(emp[*count].firstName), stdin);
-    emp[*count].firstName[strcspn(emp[*count].firstName, "\n")] = 0; // Remove newline
+    emp[*count].firstName[strcspn(emp[*count].firstName, "\n")] = 0; 
 
     printf("Enter Last Name: ");
     fgets(emp[*count].lastName, sizeof(emp[*count].lastName), stdin);
-    emp[*count].lastName[strcspn(emp[*count].lastName, "\n")] = 0; // Remove newline
+    emp[*count].lastName[strcspn(emp[*count].lastName, "\n")] = 0; 
 
     printf("Enter House Phone: ");
     fgets(emp[*count].housePhone, sizeof(emp[*count].housePhone), stdin);
-    emp[*count].housePhone[strcspn(emp[*count].housePhone, "\n")] = 0; // Remove newline
+    emp[*count].housePhone[strcspn(emp[*count].housePhone, "\n")] = 0; 
 
     printf("Enter Department: ");
     fgets(emp[*count].department, sizeof(emp[*count].department), stdin);
-    emp[*count].department[strcspn(emp[*count].department, "\n")] = 0; // Remove newline
+    emp[*count].department[strcspn(emp[*count].department, "\n")] = 0; 
 
     printf("Enter House Address: ");
     fgets(emp[*count].houseAddress, sizeof(emp[*count].houseAddress), stdin);
-    emp[*count].houseAddress[strcspn(emp[*count].houseAddress, "\n")] = 0; // Remove newline
+    emp[*count].houseAddress[strcspn(emp[*count].houseAddress, "\n")] = 0; 
 
     printf("Enter Email Address: ");
     fgets(emp[*count].emailAddress, sizeof(emp[*count].emailAddress), stdin);
-    emp[*count].emailAddress[strcspn(emp[*count].emailAddress, "\n")] = 0; // Remove newline
+    emp[*count].emailAddress[strcspn(emp[*count].emailAddress, "\n")] = 0; 
 
     printf("Enter Age: ");
     scanf("%d", &emp[*count].age);
-    getchar(); // Consume newline character
+    getchar(); 
 
     printf("Enter Date of Birth (DD/MM/YYYY): ");
     fgets(emp[*count].dob, sizeof(emp[*count].dob), stdin);
-    emp[*count].dob[strcspn(emp[*count].dob, "\n")] = 0; // Remove newline
+    emp[*count].dob[strcspn(emp[*count].dob, "\n")] = 0; 
 
     printf("Enter Basic Salary: ");
     scanf("%f", &emp[*count].basicSalary);
