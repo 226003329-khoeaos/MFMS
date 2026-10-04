@@ -38,12 +38,12 @@ This module provides functionality to manage supplier data within a municipal fi
 - **Supplier Reports:** Generate a summary report displaying all registered suppliers and the total count.
 
 Student [226019497] [Inocentia Ikera] (Student 4)
-
+**Overview**
 The Employee management module is a crucial part in the Municipality Financial Management System. It allows users or management to add, display, and search the system for employees. It retains integrity of the employee files.
 
-Features
-• addEmployee: Inserts a new employee record into the database array and increments the total count.
-• displayEmployee: Goes through the database to print the records of all currently stored employees.
-• searchEmployee: Queries the database to find and view a specific employee's information based on a search criteria, like the name of the employee, using string comparison.
+**Features**
+• **addEmployee**: Inserts a new employee record into the database array and increments the total count.
+• **displayEmployee**: Goes through the database to print the records of all currently stored employees.
+• **searchEmployee**: Queries the database to find and view a specific employee's information based on a search criteria, like the name of the employee, using string comparison.
 
 "Submitted by []"
