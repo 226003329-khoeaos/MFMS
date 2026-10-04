@@ -26,4 +26,34 @@ No online compiler is used. You must have GCC installed on your computer.
 ### Github repository link
 https://github.com/226003329-khoeaos/MFMS
 
-"Submitted by []"
+Submitted by:
+
+
+
+
+## BUDGET MANAGEMENT MODULE
+### DESCRIPTION
+
+This is a simple C program for managing departmental budgets in a municipal system.
+
+### Features
+
+- Enter departmental budgets
+- Enter departmental expenditure
+- Calculate the remaining budget
+- Check if a department is within budget
+- Identify departments that have exceeded their budget
+- Display budget information for all departments
+
+### Files
+
+- `budget.c` - Contains the budget management functions.
+- `budget.h` - Contains the function declaration used to connect the budget module to the main system.
+
+### Budget Rules
+
+- The minimum allocated budget is N$1000.
+- Expenditure cannot be negative.
+- If expenditure is greater than the allocated budget, the department is marked as `BUDGET EXCEEDED`.
+- Otherwise, it is marked as `WITHIN BUDGET`.
+
